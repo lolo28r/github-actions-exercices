@@ -1,10 +1,24 @@
-name: Hello World
+name: Node.js lint
 
-on: [push]  # Le workflow s'exécute à chaque "push"
+on: 
+  push:
+  pull_request:
 
 jobs:
-  greeting:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello World"
+      - name: checkout le code
+        uses: actions/checkout@v4
+
+      - name: installer node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: installer les dépendances
+        run: npm install
+
+      - name: vérifier le code  
+        run: npm run lit
+        
