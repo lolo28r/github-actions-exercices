@@ -1,0 +1,12 @@
+name: Variables d'environnement
+
+on: [push]
+
+jobs:
+  show-message:
+    runs-on: ubuntu-latest
+    env:
+      MESSAGE: "Déploiement réussi"
+    steps:
+      - name: Afficher le message
+        run: echo "$MESSAGE"
