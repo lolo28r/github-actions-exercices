@@ -1,0 +1,24 @@
+{
+  "name": "github-actions-exercices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Tests réussis !\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolo28r/github-actions-exercices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolo28r/github-actions-exercices/issues"
+  },
+  "homepage": "https://github.com/lolo28r/github-actions-exercices#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.39.1"
+  }
+}
