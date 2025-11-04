@@ -19,6 +19,6 @@
   "homepage": "https://github.com/lolo28r/github-actions-exercices#readme",
   "description": "",
   "devDependencies": {
-    "eslint": "^9.39.1"
+    "eslint": "^8.57.1"
   }
 }
