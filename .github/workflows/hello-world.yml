@@ -1,8 +1,10 @@
-name : Hello world
-on : [push]
-jobs: 
+name: Hello World
+
+on: [push]  # Le workflow s'exécute à chaque "push"
+
+jobs:
   greeting:
-    runs on: ubuntu-latest
-      steps:
-        - name: Say hello
-          run: echo 'Hello World"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World"
